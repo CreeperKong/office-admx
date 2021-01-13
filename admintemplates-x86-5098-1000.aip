@@ -12,7 +12,7 @@
     <ROW Property="Manufacturer" Value="Packed by CreeperKong"/>
     <ROW Property="ProductCode" Value="1033:{3D924FC9-5EFA-432B-8ED9-2530690E8D64} " Type="16"/>
     <ROW Property="ProductLanguage" Value="1033"/>
-    <ROW Property="ProductName" Value="Office Group Policy Files for 2016+/365 x86"/>
+    <ROW Property="ProductName" Value="Office Group Policy Files for 2016+ and 365 x86"/>
     <ROW Property="ProductVersion" Value="2021.1.13.0" Type="32"/>
     <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
     <ROW Property="UpgradeCode" Value="{E1138FEA-82D0-4A46-B9D7-520B662372EC}"/>
