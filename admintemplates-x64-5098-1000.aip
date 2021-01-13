@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="17.8" version="17.8" Modules="architect" RootPath="." Language="en" Id="{B07D5FF0-AC78-4891-A4A9-E43E067A3B51}">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
+    <ROW Property="ALLUSERS" Value="1"/>
+    <ROW Property="ARPHELPLINK" Value="https://github.com/CreeperKong/office-admx"/>
+    <ROW Property="ARPNOMODIFY" MultiBuildValue="DefaultBuild:1"/>
+    <ROW Property="ARPPRODUCTICON" Value="protocolhandler.exe" Type="8"/>
+    <ROW Property="ARPURLINFOABOUT" Value="https://github.com/CreeperKong/office-admx"/>
+    <ROW Property="ARPURLUPDATEINFO" Value="https://github.com/CreeperKong/office-admx"/>
+    <ROW Property="LIMITUI" MultiBuildValue="DefaultBuild:1"/>
+    <ROW Property="Manufacturer" Value="Packed by CreeperKong"/>
+    <ROW Property="ProductCode" Value="1033:{BDDA0DB6-986B-4816-821A-9402A617BEB1} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="Office Group Policy Files for 2016+/365 x64"/>
+    <ROW Property="ProductVersion" Value="2021.1.13.0" Type="32"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{C412E0F1-C1CE-46C8-9107-D603F67853E6}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40Display" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50Display" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5X" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5XDisplay" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="PolicyDefinitions_Dir" Directory_Parent="WindowsFolder" DefaultDir="POLICY~1|PolicyDefinitions"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+    <ROW Directory="WindowsFolder" Directory_Parent="TARGETDIR" DefaultDir="WINDOW~1|WindowsFolder" IsPseudoRoot="1"/>
+    <ROW Directory="dede_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="de-de"/>
+    <ROW Directory="enus_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="en-us"/>
+    <ROW Directory="eses_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="es-es"/>
+    <ROW Directory="frfr_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="fr-fr"/>
+    <ROW Directory="itit_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="it-it"/>
+    <ROW Directory="jajp_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="ja-jp"/>
+    <ROW Directory="kokr_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="ko-kr"/>
+    <ROW Directory="nlnl_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="nl-nl"/>
+    <ROW Directory="ptbr_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="pt-br"/>
+    <ROW Directory="ruru_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="ru-ru"/>
+    <ROW Directory="zhcn_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="zh-cn"/>
+    <ROW Directory="zhtw_Dir" Directory_Parent="PolicyDefinitions_Dir" DefaultDir="zh-tw"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="APPDIR" ComponentId="{D3878ECD-5AA4-46E0-ACEF-2F76BDAD5E05}" Directory_="APPDIR" Attributes="0"/>
+    <ROW Component="ProductInformation" ComponentId="{1B7B68AE-AFEB-4A43-86A7-BD5FB2B0C1AD}" Directory_="APPDIR" Attributes="260" KeyPath="Version"/>
+    <ROW Component="access16.adml" ComponentId="{088FE62B-54CA-485D-9203-962D35167666}" Directory_="ptbr_Dir" Attributes="0" KeyPath="access16.adml" Type="0"/>
+    <ROW Component="access16.adml_1" ComponentId="{E450C8C6-3BDB-4146-9712-DB3C7D540BC7}" Directory_="ruru_Dir" Attributes="0" KeyPath="access16.adml_1" Type="0"/>
+    <ROW Component="access16.adml_10" ComponentId="{5172670B-269F-4B0E-B5A8-74D8E0819E98}" Directory_="kokr_Dir" Attributes="0" KeyPath="access16.adml_10" Type="0"/>
+    <ROW Component="access16.adml_11" ComponentId="{3D31942A-634F-4F24-9371-42691555E011}" Directory_="nlnl_Dir" Attributes="0" KeyPath="access16.adml_11" Type="0"/>
+    <ROW Component="access16.adml_2" ComponentId="{7B8E4A75-7895-49F3-84B6-1FE132E830F9}" Directory_="zhcn_Dir" Attributes="0" KeyPath="access16.adml_2" Type="0"/>
+    <ROW Component="access16.adml_3" ComponentId="{75D092C4-EAFE-4846-B8C8-5552D40D9BFB}" Directory_="zhtw_Dir" Attributes="0" KeyPath="access16.adml_3" Type="0"/>
+    <ROW Component="access16.adml_4" ComponentId="{99F927B0-ECFA-49D3-A976-035CE5519746}" Directory_="dede_Dir" Attributes="0" KeyPath="access16.adml_4" Type="0"/>
+    <ROW Component="access16.adml_5" ComponentId="{031941F4-097A-48C4-91C2-D59DA9DE960F}" Directory_="enus_Dir" Attributes="0" KeyPath="access16.adml_5" Type="0"/>
+    <ROW Component="access16.adml_6" ComponentId="{573F9C3A-565A-422D-BD5B-C7559D21ED67}" Directory_="eses_Dir" Attributes="0" KeyPath="access16.adml_6" Type="0"/>
+    <ROW Component="access16.adml_7" ComponentId="{B8BEBC7F-3F17-4C57-AB94-8986FA575D6D}" Directory_="frfr_Dir" Attributes="0" KeyPath="access16.adml_7" Type="0"/>
+    <ROW Component="access16.adml_8" ComponentId="{C19B3C82-B8CE-42BC-9DB3-17B229A3B0E3}" Directory_="itit_Dir" Attributes="0" KeyPath="access16.adml_8" Type="0"/>
+    <ROW Component="access16.adml_9" ComponentId="{4B14253B-180C-4BCD-AC46-6CDC1F096FB4}" Directory_="jajp_Dir" Attributes="0" KeyPath="access16.adml_9" Type="0"/>
+    <ROW Component="access16.admx" ComponentId="{5DC66A17-DABB-4853-8619-D89DAD0B1398}" Directory_="PolicyDefinitions_Dir" Attributes="0" KeyPath="access16.admx" Type="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="OfficeGPF" Title="MainFeature" Description="Office Group Policy Files" Display="1" Level="1" Directory_="APPDIR" Attributes="0"/>
+    <ATTRIBUTE name="CurrentFeature" value="OfficeGPF"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="access16.adml" Component_="access16.adml" FileName="ACCESS~1.ADM|access16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\pt-br\access16.adml" SelfReg="false"/>
+    <ROW File="excel16.adml" Component_="access16.adml" FileName="EXCEL1~1.ADM|excel16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\pt-br\excel16.adml" SelfReg="false"/>
+    <ROW File="lync16.adml" Component_="access16.adml" FileName="LYNC16~1.ADM|lync16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\pt-br\lync16.adml" SelfReg="false"/>
+    <ROW File="office16.adml" Component_="access16.adml" FileName="OFFICE~1.ADM|office16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\pt-br\office16.adml" SelfReg="false"/>
+    <ROW File="onent16.adml" Component_="access16.adml" FileName="ONENT1~1.ADM|onent16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\pt-br\onent16.adml" SelfReg="false"/>
+    <ROW File="outlk16.adml" Component_="access16.adml" FileName="OUTLK1~1.ADM|outlk16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\pt-br\outlk16.adml" SelfReg="false"/>
+    <ROW File="ppt16.adml" Component_="access16.adml" FileName="PPT16~1.ADM|ppt16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\pt-br\ppt16.adml" SelfReg="false"/>
+    <ROW File="proj16.adml" Component_="access16.adml" FileName="PROJ16~1.ADM|proj16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\pt-br\proj16.adml" SelfReg="false"/>
+    <ROW File="pub16.adml" Component_="access16.adml" FileName="PUB16~1.ADM|pub16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\pt-br\pub16.adml" SelfReg="false"/>
+    <ROW File="teams16.adml" Component_="access16.adml" FileName="TEAMS1~1.ADM|teams16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\pt-br\teams16.adml" SelfReg="false"/>
+    <ROW File="visio16.adml" Component_="access16.adml" FileName="VISIO1~1.ADM|visio16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\pt-br\visio16.adml" SelfReg="false"/>
+    <ROW File="word16.adml" Component_="access16.adml" FileName="WORD16~1.ADM|word16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\pt-br\word16.adml" SelfReg="false"/>
+    <ROW File="access16.adml_1" Component_="access16.adml_1" FileName="ACCESS~1.ADM|access16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\ru-ru\access16.adml" SelfReg="false"/>
+    <ROW File="excel16.adml_1" Component_="access16.adml_1" FileName="EXCEL1~1.ADM|excel16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\ru-ru\excel16.adml" SelfReg="false"/>
+    <ROW File="lync16.adml_1" Component_="access16.adml_1" FileName="LYNC16~1.ADM|lync16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\ru-ru\lync16.adml" SelfReg="false"/>
+    <ROW File="office16.adml_1" Component_="access16.adml_1" FileName="OFFICE~1.ADM|office16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\ru-ru\office16.adml" SelfReg="false"/>
+    <ROW File="onent16.adml_1" Component_="access16.adml_1" FileName="ONENT1~1.ADM|onent16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\ru-ru\onent16.adml" SelfReg="false"/>
+    <ROW File="outlk16.adml_1" Component_="access16.adml_1" FileName="OUTLK1~1.ADM|outlk16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\ru-ru\outlk16.adml" SelfReg="false"/>
+    <ROW File="ppt16.adml_1" Component_="access16.adml_1" FileName="PPT16~1.ADM|ppt16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\ru-ru\ppt16.adml" SelfReg="false"/>
+    <ROW File="proj16.adml_1" Component_="access16.adml_1" FileName="PROJ16~1.ADM|proj16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\ru-ru\proj16.adml" SelfReg="false"/>
+    <ROW File="pub16.adml_1" Component_="access16.adml_1" FileName="PUB16~1.ADM|pub16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\ru-ru\pub16.adml" SelfReg="false"/>
+    <ROW File="teams16.adml_1" Component_="access16.adml_1" FileName="TEAMS1~1.ADM|teams16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\ru-ru\teams16.adml" SelfReg="false"/>
+    <ROW File="visio16.adml_1" Component_="access16.adml_1" FileName="VISIO1~1.ADM|visio16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\ru-ru\visio16.adml" SelfReg="false"/>
+    <ROW File="word16.adml_1" Component_="access16.adml_1" FileName="WORD16~1.ADM|word16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\ru-ru\word16.adml" SelfReg="false"/>
+    <ROW File="access16.adml_2" Component_="access16.adml_2" FileName="ACCESS~1.ADM|access16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\zh-cn\access16.adml" SelfReg="false"/>
+    <ROW File="excel16.adml_2" Component_="access16.adml_2" FileName="EXCEL1~1.ADM|excel16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\zh-cn\excel16.adml" SelfReg="false"/>
+    <ROW File="lync16.adml_2" Component_="access16.adml_2" FileName="LYNC16~1.ADM|lync16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\zh-cn\lync16.adml" SelfReg="false"/>
+    <ROW File="office16.adml_2" Component_="access16.adml_2" FileName="OFFICE~1.ADM|office16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\zh-cn\office16.adml" SelfReg="false"/>
+    <ROW File="onent16.adml_2" Component_="access16.adml_2" FileName="ONENT1~1.ADM|onent16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\zh-cn\onent16.adml" SelfReg="false"/>
+    <ROW File="outlk16.adml_2" Component_="access16.adml_2" FileName="OUTLK1~1.ADM|outlk16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\zh-cn\outlk16.adml" SelfReg="false"/>
+    <ROW File="ppt16.adml_2" Component_="access16.adml_2" FileName="PPT16~1.ADM|ppt16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\zh-cn\ppt16.adml" SelfReg="false"/>
+    <ROW File="proj16.adml_2" Component_="access16.adml_2" FileName="PROJ16~1.ADM|proj16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\zh-cn\proj16.adml" SelfReg="false"/>
+    <ROW File="pub16.adml_2" Component_="access16.adml_2" FileName="PUB16~1.ADM|pub16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\zh-cn\pub16.adml" SelfReg="false"/>
+    <ROW File="teams16.adml_2" Component_="access16.adml_2" FileName="TEAMS1~1.ADM|teams16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\zh-cn\teams16.adml" SelfReg="false"/>
+    <ROW File="visio16.adml_2" Component_="access16.adml_2" FileName="VISIO1~1.ADM|visio16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\zh-cn\visio16.adml" SelfReg="false"/>
+    <ROW File="word16.adml_2" Component_="access16.adml_2" FileName="WORD16~1.ADM|word16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\zh-cn\word16.adml" SelfReg="false"/>
+    <ROW File="access16.adml_3" Component_="access16.adml_3" FileName="ACCESS~1.ADM|access16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\zh-tw\access16.adml" SelfReg="false"/>
+    <ROW File="excel16.adml_3" Component_="access16.adml_3" FileName="EXCEL1~1.ADM|excel16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\zh-tw\excel16.adml" SelfReg="false"/>
+    <ROW File="lync16.adml_3" Component_="access16.adml_3" FileName="LYNC16~1.ADM|lync16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\zh-tw\lync16.adml" SelfReg="false"/>
+    <ROW File="office16.adml_3" Component_="access16.adml_3" FileName="OFFICE~1.ADM|office16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\zh-tw\office16.adml" SelfReg="false"/>
+    <ROW File="onent16.adml_3" Component_="access16.adml_3" FileName="ONENT1~1.ADM|onent16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\zh-tw\onent16.adml" SelfReg="false"/>
+    <ROW File="outlk16.adml_3" Component_="access16.adml_3" FileName="OUTLK1~1.ADM|outlk16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\zh-tw\outlk16.adml" SelfReg="false"/>
+    <ROW File="ppt16.adml_3" Component_="access16.adml_3" FileName="PPT16~1.ADM|ppt16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\zh-tw\ppt16.adml" SelfReg="false"/>
+    <ROW File="proj16.adml_3" Component_="access16.adml_3" FileName="PROJ16~1.ADM|proj16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\zh-tw\proj16.adml" SelfReg="false"/>
+    <ROW File="pub16.adml_3" Component_="access16.adml_3" FileName="PUB16~1.ADM|pub16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\zh-tw\pub16.adml" SelfReg="false"/>
+    <ROW File="teams16.adml_3" Component_="access16.adml_3" FileName="TEAMS1~1.ADM|teams16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\zh-tw\teams16.adml" SelfReg="false"/>
+    <ROW File="visio16.adml_3" Component_="access16.adml_3" FileName="VISIO1~1.ADM|visio16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\zh-tw\visio16.adml" SelfReg="false"/>
+    <ROW File="word16.adml_3" Component_="access16.adml_3" FileName="WORD16~1.ADM|word16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\zh-tw\word16.adml" SelfReg="false"/>
+    <ROW File="access16.admx" Component_="access16.admx" FileName="ACCESS~1.ADM|access16.admx" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\access16.admx" SelfReg="false"/>
+    <ROW File="excel16.admx" Component_="access16.admx" FileName="EXCEL1~1.ADM|excel16.admx" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\excel16.admx" SelfReg="false"/>
+    <ROW File="lync16.admx" Component_="access16.admx" FileName="LYNC16~1.ADM|lync16.admx" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\lync16.admx" SelfReg="false"/>
+    <ROW File="office16.admx" Component_="access16.admx" FileName="OFFICE~1.ADM|office16.admx" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\office16.admx" SelfReg="false"/>
+    <ROW File="onent16.admx" Component_="access16.admx" FileName="ONENT1~1.ADM|onent16.admx" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\onent16.admx" SelfReg="false"/>
+    <ROW File="outlk16.admx" Component_="access16.admx" FileName="OUTLK1~1.ADM|outlk16.admx" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\outlk16.admx" SelfReg="false"/>
+    <ROW File="ppt16.admx" Component_="access16.admx" FileName="PPT16~1.ADM|ppt16.admx" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\ppt16.admx" SelfReg="false"/>
+    <ROW File="proj16.admx" Component_="access16.admx" FileName="PROJ16~1.ADM|proj16.admx" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\proj16.admx" SelfReg="false"/>
+    <ROW File="pub16.admx" Component_="access16.admx" FileName="PUB16~1.ADM|pub16.admx" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\pub16.admx" SelfReg="false"/>
+    <ROW File="teams16.admx" Component_="access16.admx" FileName="TEAMS1~1.ADM|teams16.admx" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\teams16.admx" SelfReg="false"/>
+    <ROW File="visio16.admx" Component_="access16.admx" FileName="VISIO1~1.ADM|visio16.admx" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\visio16.admx" SelfReg="false"/>
+    <ROW File="word16.admx" Component_="access16.admx" FileName="WORD16~1.ADM|word16.admx" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\word16.admx" SelfReg="false"/>
+    <ROW File="access16.adml_4" Component_="access16.adml_4" FileName="ACCESS~1.ADM|access16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\de-de\access16.adml" SelfReg="false"/>
+    <ROW File="excel16.adml_4" Component_="access16.adml_4" FileName="EXCEL1~1.ADM|excel16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\de-de\excel16.adml" SelfReg="false"/>
+    <ROW File="lync16.adml_4" Component_="access16.adml_4" FileName="LYNC16~1.ADM|lync16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\de-de\lync16.adml" SelfReg="false"/>
+    <ROW File="office16.adml_4" Component_="access16.adml_4" FileName="OFFICE~1.ADM|office16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\de-de\office16.adml" SelfReg="false"/>
+    <ROW File="onent16.adml_4" Component_="access16.adml_4" FileName="ONENT1~1.ADM|onent16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\de-de\onent16.adml" SelfReg="false"/>
+    <ROW File="outlk16.adml_4" Component_="access16.adml_4" FileName="OUTLK1~1.ADM|outlk16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\de-de\outlk16.adml" SelfReg="false"/>
+    <ROW File="ppt16.adml_4" Component_="access16.adml_4" FileName="PPT16~1.ADM|ppt16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\de-de\ppt16.adml" SelfReg="false"/>
+    <ROW File="proj16.adml_4" Component_="access16.adml_4" FileName="PROJ16~1.ADM|proj16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\de-de\proj16.adml" SelfReg="false"/>
+    <ROW File="pub16.adml_4" Component_="access16.adml_4" FileName="PUB16~1.ADM|pub16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\de-de\pub16.adml" SelfReg="false"/>
+    <ROW File="teams16.adml_4" Component_="access16.adml_4" FileName="TEAMS1~1.ADM|teams16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\de-de\teams16.adml" SelfReg="false"/>
+    <ROW File="visio16.adml_4" Component_="access16.adml_4" FileName="VISIO1~1.ADM|visio16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\de-de\visio16.adml" SelfReg="false"/>
+    <ROW File="word16.adml_4" Component_="access16.adml_4" FileName="WORD16~1.ADM|word16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\de-de\word16.adml" SelfReg="false"/>
+    <ROW File="access16.adml_5" Component_="access16.adml_5" FileName="ACCESS~1.ADM|access16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\en-us\access16.adml" SelfReg="false"/>
+    <ROW File="excel16.adml_5" Component_="access16.adml_5" FileName="EXCEL1~1.ADM|excel16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\en-us\excel16.adml" SelfReg="false"/>
+    <ROW File="lync16.adml_5" Component_="access16.adml_5" FileName="LYNC16~1.ADM|lync16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\en-us\lync16.adml" SelfReg="false"/>
+    <ROW File="office16.adml_5" Component_="access16.adml_5" FileName="OFFICE~1.ADM|office16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\en-us\office16.adml" SelfReg="false"/>
+    <ROW File="onent16.adml_5" Component_="access16.adml_5" FileName="ONENT1~1.ADM|onent16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\en-us\onent16.adml" SelfReg="false"/>
+    <ROW File="outlk16.adml_5" Component_="access16.adml_5" FileName="OUTLK1~1.ADM|outlk16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\en-us\outlk16.adml" SelfReg="false"/>
+    <ROW File="ppt16.adml_5" Component_="access16.adml_5" FileName="PPT16~1.ADM|ppt16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\en-us\ppt16.adml" SelfReg="false"/>
+    <ROW File="proj16.adml_5" Component_="access16.adml_5" FileName="PROJ16~1.ADM|proj16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\en-us\proj16.adml" SelfReg="false"/>
+    <ROW File="pub16.adml_5" Component_="access16.adml_5" FileName="PUB16~1.ADM|pub16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\en-us\pub16.adml" SelfReg="false"/>
+    <ROW File="teams16.adml_5" Component_="access16.adml_5" FileName="TEAMS1~1.ADM|teams16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\en-us\teams16.adml" SelfReg="false"/>
+    <ROW File="visio16.adml_5" Component_="access16.adml_5" FileName="VISIO1~1.ADM|visio16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\en-us\visio16.adml" SelfReg="false"/>
+    <ROW File="word16.adml_5" Component_="access16.adml_5" FileName="WORD16~1.ADM|word16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\en-us\word16.adml" SelfReg="false"/>
+    <ROW File="access16.adml_6" Component_="access16.adml_6" FileName="ACCESS~1.ADM|access16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\es-es\access16.adml" SelfReg="false"/>
+    <ROW File="excel16.adml_6" Component_="access16.adml_6" FileName="EXCEL1~1.ADM|excel16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\es-es\excel16.adml" SelfReg="false"/>
+    <ROW File="lync16.adml_6" Component_="access16.adml_6" FileName="LYNC16~1.ADM|lync16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\es-es\lync16.adml" SelfReg="false"/>
+    <ROW File="office16.adml_6" Component_="access16.adml_6" FileName="OFFICE~1.ADM|office16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\es-es\office16.adml" SelfReg="false"/>
+    <ROW File="onent16.adml_6" Component_="access16.adml_6" FileName="ONENT1~1.ADM|onent16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\es-es\onent16.adml" SelfReg="false"/>
+    <ROW File="outlk16.adml_6" Component_="access16.adml_6" FileName="OUTLK1~1.ADM|outlk16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\es-es\outlk16.adml" SelfReg="false"/>
+    <ROW File="ppt16.adml_6" Component_="access16.adml_6" FileName="PPT16~1.ADM|ppt16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\es-es\ppt16.adml" SelfReg="false"/>
+    <ROW File="proj16.adml_6" Component_="access16.adml_6" FileName="PROJ16~1.ADM|proj16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\es-es\proj16.adml" SelfReg="false"/>
+    <ROW File="pub16.adml_6" Component_="access16.adml_6" FileName="PUB16~1.ADM|pub16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\es-es\pub16.adml" SelfReg="false"/>
+    <ROW File="teams16.adml_6" Component_="access16.adml_6" FileName="TEAMS1~1.ADM|teams16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\es-es\teams16.adml" SelfReg="false"/>
+    <ROW File="visio16.adml_6" Component_="access16.adml_6" FileName="VISIO1~1.ADM|visio16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\es-es\visio16.adml" SelfReg="false"/>
+    <ROW File="word16.adml_6" Component_="access16.adml_6" FileName="WORD16~1.ADM|word16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\es-es\word16.adml" SelfReg="false"/>
+    <ROW File="access16.adml_7" Component_="access16.adml_7" FileName="ACCESS~1.ADM|access16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\fr-fr\access16.adml" SelfReg="false"/>
+    <ROW File="excel16.adml_7" Component_="access16.adml_7" FileName="EXCEL1~1.ADM|excel16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\fr-fr\excel16.adml" SelfReg="false"/>
+    <ROW File="lync16.adml_7" Component_="access16.adml_7" FileName="LYNC16~1.ADM|lync16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\fr-fr\lync16.adml" SelfReg="false"/>
+    <ROW File="office16.adml_7" Component_="access16.adml_7" FileName="OFFICE~1.ADM|office16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\fr-fr\office16.adml" SelfReg="false"/>
+    <ROW File="onent16.adml_7" Component_="access16.adml_7" FileName="ONENT1~1.ADM|onent16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\fr-fr\onent16.adml" SelfReg="false"/>
+    <ROW File="outlk16.adml_7" Component_="access16.adml_7" FileName="OUTLK1~1.ADM|outlk16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\fr-fr\outlk16.adml" SelfReg="false"/>
+    <ROW File="ppt16.adml_7" Component_="access16.adml_7" FileName="PPT16~1.ADM|ppt16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\fr-fr\ppt16.adml" SelfReg="false"/>
+    <ROW File="proj16.adml_7" Component_="access16.adml_7" FileName="PROJ16~1.ADM|proj16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\fr-fr\proj16.adml" SelfReg="false"/>
+    <ROW File="pub16.adml_7" Component_="access16.adml_7" FileName="PUB16~1.ADM|pub16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\fr-fr\pub16.adml" SelfReg="false"/>
+    <ROW File="teams16.adml_7" Component_="access16.adml_7" FileName="TEAMS1~1.ADM|teams16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\fr-fr\teams16.adml" SelfReg="false"/>
+    <ROW File="visio16.adml_7" Component_="access16.adml_7" FileName="VISIO1~1.ADM|visio16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\fr-fr\visio16.adml" SelfReg="false"/>
+    <ROW File="word16.adml_7" Component_="access16.adml_7" FileName="WORD16~1.ADM|word16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\fr-fr\word16.adml" SelfReg="false"/>
+    <ROW File="access16.adml_8" Component_="access16.adml_8" FileName="ACCESS~1.ADM|access16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\it-it\access16.adml" SelfReg="false"/>
+    <ROW File="excel16.adml_8" Component_="access16.adml_8" FileName="EXCEL1~1.ADM|excel16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\it-it\excel16.adml" SelfReg="false"/>
+    <ROW File="lync16.adml_8" Component_="access16.adml_8" FileName="LYNC16~1.ADM|lync16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\it-it\lync16.adml" SelfReg="false"/>
+    <ROW File="office16.adml_8" Component_="access16.adml_8" FileName="OFFICE~1.ADM|office16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\it-it\office16.adml" SelfReg="false"/>
+    <ROW File="onent16.adml_8" Component_="access16.adml_8" FileName="ONENT1~1.ADM|onent16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\it-it\onent16.adml" SelfReg="false"/>
+    <ROW File="outlk16.adml_8" Component_="access16.adml_8" FileName="OUTLK1~1.ADM|outlk16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\it-it\outlk16.adml" SelfReg="false"/>
+    <ROW File="ppt16.adml_8" Component_="access16.adml_8" FileName="PPT16~1.ADM|ppt16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\it-it\ppt16.adml" SelfReg="false"/>
+    <ROW File="proj16.adml_8" Component_="access16.adml_8" FileName="PROJ16~1.ADM|proj16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\it-it\proj16.adml" SelfReg="false"/>
+    <ROW File="pub16.adml_8" Component_="access16.adml_8" FileName="PUB16~1.ADM|pub16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\it-it\pub16.adml" SelfReg="false"/>
+    <ROW File="teams16.adml_8" Component_="access16.adml_8" FileName="TEAMS1~1.ADM|teams16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\it-it\teams16.adml" SelfReg="false"/>
+    <ROW File="visio16.adml_8" Component_="access16.adml_8" FileName="VISIO1~1.ADM|visio16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\it-it\visio16.adml" SelfReg="false"/>
+    <ROW File="word16.adml_8" Component_="access16.adml_8" FileName="WORD16~1.ADM|word16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\it-it\word16.adml" SelfReg="false"/>
+    <ROW File="access16.adml_9" Component_="access16.adml_9" FileName="ACCESS~1.ADM|access16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\ja-jp\access16.adml" SelfReg="false"/>
+    <ROW File="excel16.adml_9" Component_="access16.adml_9" FileName="EXCEL1~1.ADM|excel16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\ja-jp\excel16.adml" SelfReg="false"/>
+    <ROW File="lync16.adml_9" Component_="access16.adml_9" FileName="LYNC16~1.ADM|lync16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\ja-jp\lync16.adml" SelfReg="false"/>
+    <ROW File="office16.adml_9" Component_="access16.adml_9" FileName="OFFICE~1.ADM|office16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\ja-jp\office16.adml" SelfReg="false"/>
+    <ROW File="onent16.adml_9" Component_="access16.adml_9" FileName="ONENT1~1.ADM|onent16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\ja-jp\onent16.adml" SelfReg="false"/>
+    <ROW File="outlk16.adml_9" Component_="access16.adml_9" FileName="OUTLK1~1.ADM|outlk16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\ja-jp\outlk16.adml" SelfReg="false"/>
+    <ROW File="ppt16.adml_9" Component_="access16.adml_9" FileName="PPT16~1.ADM|ppt16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\ja-jp\ppt16.adml" SelfReg="false"/>
+    <ROW File="proj16.adml_9" Component_="access16.adml_9" FileName="PROJ16~1.ADM|proj16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\ja-jp\proj16.adml" SelfReg="false"/>
+    <ROW File="pub16.adml_9" Component_="access16.adml_9" FileName="PUB16~1.ADM|pub16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\ja-jp\pub16.adml" SelfReg="false"/>
+    <ROW File="teams16.adml_9" Component_="access16.adml_9" FileName="TEAMS1~1.ADM|teams16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\ja-jp\teams16.adml" SelfReg="false"/>
+    <ROW File="visio16.adml_9" Component_="access16.adml_9" FileName="VISIO1~1.ADM|visio16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\ja-jp\visio16.adml" SelfReg="false"/>
+    <ROW File="word16.adml_9" Component_="access16.adml_9" FileName="WORD16~1.ADM|word16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\ja-jp\word16.adml" SelfReg="false"/>
+    <ROW File="access16.adml_10" Component_="access16.adml_10" FileName="ACCESS~1.ADM|access16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\ko-kr\access16.adml" SelfReg="false"/>
+    <ROW File="excel16.adml_10" Component_="access16.adml_10" FileName="EXCEL1~1.ADM|excel16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\ko-kr\excel16.adml" SelfReg="false"/>
+    <ROW File="lync16.adml_10" Component_="access16.adml_10" FileName="LYNC16~1.ADM|lync16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\ko-kr\lync16.adml" SelfReg="false"/>
+    <ROW File="office16.adml_10" Component_="access16.adml_10" FileName="OFFICE~1.ADM|office16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\ko-kr\office16.adml" SelfReg="false"/>
+    <ROW File="onent16.adml_10" Component_="access16.adml_10" FileName="ONENT1~1.ADM|onent16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\ko-kr\onent16.adml" SelfReg="false"/>
+    <ROW File="outlk16.adml_10" Component_="access16.adml_10" FileName="OUTLK1~1.ADM|outlk16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\ko-kr\outlk16.adml" SelfReg="false"/>
+    <ROW File="ppt16.adml_10" Component_="access16.adml_10" FileName="PPT16~1.ADM|ppt16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\ko-kr\ppt16.adml" SelfReg="false"/>
+    <ROW File="proj16.adml_10" Component_="access16.adml_10" FileName="PROJ16~1.ADM|proj16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\ko-kr\proj16.adml" SelfReg="false"/>
+    <ROW File="pub16.adml_10" Component_="access16.adml_10" FileName="PUB16~1.ADM|pub16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\ko-kr\pub16.adml" SelfReg="false"/>
+    <ROW File="teams16.adml_10" Component_="access16.adml_10" FileName="TEAMS1~1.ADM|teams16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\ko-kr\teams16.adml" SelfReg="false"/>
+    <ROW File="visio16.adml_10" Component_="access16.adml_10" FileName="VISIO1~1.ADM|visio16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\ko-kr\visio16.adml" SelfReg="false"/>
+    <ROW File="word16.adml_10" Component_="access16.adml_10" FileName="WORD16~1.ADM|word16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\ko-kr\word16.adml" SelfReg="false"/>
+    <ROW File="access16.adml_11" Component_="access16.adml_11" FileName="ACCESS~1.ADM|access16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\nl-nl\access16.adml" SelfReg="false"/>
+    <ROW File="excel16.adml_11" Component_="access16.adml_11" FileName="EXCEL1~1.ADM|excel16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\nl-nl\excel16.adml" SelfReg="false"/>
+    <ROW File="lync16.adml_11" Component_="access16.adml_11" FileName="LYNC16~1.ADM|lync16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\nl-nl\lync16.adml" SelfReg="false"/>
+    <ROW File="office16.adml_11" Component_="access16.adml_11" FileName="OFFICE~1.ADM|office16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\nl-nl\office16.adml" SelfReg="false"/>
+    <ROW File="onent16.adml_11" Component_="access16.adml_11" FileName="ONENT1~1.ADM|onent16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\nl-nl\onent16.adml" SelfReg="false"/>
+    <ROW File="outlk16.adml_11" Component_="access16.adml_11" FileName="OUTLK1~1.ADM|outlk16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\nl-nl\outlk16.adml" SelfReg="false"/>
+    <ROW File="ppt16.adml_11" Component_="access16.adml_11" FileName="PPT16~1.ADM|ppt16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\nl-nl\ppt16.adml" SelfReg="false"/>
+    <ROW File="proj16.adml_11" Component_="access16.adml_11" FileName="PROJ16~1.ADM|proj16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\nl-nl\proj16.adml" SelfReg="false"/>
+    <ROW File="pub16.adml_11" Component_="access16.adml_11" FileName="PUB16~1.ADM|pub16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\nl-nl\pub16.adml" SelfReg="false"/>
+    <ROW File="teams16.adml_11" Component_="access16.adml_11" FileName="TEAMS1~1.ADM|teams16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\nl-nl\teams16.adml" SelfReg="false"/>
+    <ROW File="visio16.adml_11" Component_="access16.adml_11" FileName="VISIO1~1.ADM|visio16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\nl-nl\visio16.adml" SelfReg="false"/>
+    <ROW File="word16.adml_11" Component_="access16.adml_11" FileName="WORD16~1.ADM|word16.adml" Attributes="0" SourcePath="admintemplates_x64_5098-1000_en-us\admx\nl-nl\word16.adml" SelfReg="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
+    <ROW BootstrOptKey="GlobalOptions" DownloadFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\prerequisites" Options="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="1" PackageFolder="SetupFiles" Languages="en" InstallationType="4" UseLargeSchema="true" MsiPackageType="x64"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\FolderDlg.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceWelcomeDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRepairDlg.aip"/>
+    <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\WelcomeDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="202"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RemoveButton" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RepairButton" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="399" Options="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="APPDIR" Component_="APPDIR" ManualDelete="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
+    <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]" MultiBuildTarget="DefaultBuild:[CommonFiles64Folder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatCompsComponent">
+    <ROW Feature_="OfficeGPF" Component_="APPDIR"/>
+    <ROW Feature_="OfficeGPF" Component_="ProductInformation"/>
+    <ROW Feature_="OfficeGPF" Component_="access16.adml"/>
+    <ROW Feature_="OfficeGPF" Component_="access16.adml_1"/>
+    <ROW Feature_="OfficeGPF" Component_="access16.adml_2"/>
+    <ROW Feature_="OfficeGPF" Component_="access16.adml_3"/>
+    <ROW Feature_="OfficeGPF" Component_="access16.admx"/>
+    <ROW Feature_="OfficeGPF" Component_="access16.adml_4"/>
+    <ROW Feature_="OfficeGPF" Component_="access16.adml_5"/>
+    <ROW Feature_="OfficeGPF" Component_="access16.adml_6"/>
+    <ROW Feature_="OfficeGPF" Component_="access16.adml_7"/>
+    <ROW Feature_="OfficeGPF" Component_="access16.adml_8"/>
+    <ROW Feature_="OfficeGPF" Component_="access16.adml_9"/>
+    <ROW Feature_="OfficeGPF" Component_="access16.adml_10"/>
+    <ROW Feature_="OfficeGPF" Component_="access16.adml_11"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="protocolhandler.exe" SourcePath="C:\Program Files\Microsoft Office\root\Office16\protocolhandler.exe" Index="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="53"/>
+    <ROW Action="AI_DpiContentScale" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="((VersionNT &lt;&gt; 501) AND (VersionNT &lt;&gt; 502))" Description="[ProductName] cannot be installed on [WindowsTypeNT5XDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT5X" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] cannot be installed on [WindowsTypeNT40Display]." DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 500)" Description="[ProductName] cannot be installed on [WindowsTypeNT50Display]." DescriptionLocId="AI.LaunchCondition.NoNT50" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]." DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="0.0.1" VersionMax="[|ProductVersion]" Attributes="257" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+</DOCUMENT>
